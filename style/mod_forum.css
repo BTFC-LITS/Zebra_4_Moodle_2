@@ -28,7 +28,7 @@
 }
 
 .path-mod-forum .forumheaderlist {
-    border: 1px solid [[setting:bodybgcolor]];
+    border: 1px solid [[setting:bordercolor]];
 }
 
 .forumpost {
@@ -39,7 +39,7 @@
     height: 35px;
     border-bottom: 3px solid;
     background-color: [[setting:linkcolor]];
-    border-bottom-color: [[setting:bodybgcolor]];
+    border-bottom-color: [[setting:bordercolor]];
 }
 
 .forumpost.unread .header {
@@ -55,7 +55,7 @@ span.unread {
 }
 
 .forumpost .header .author {
-    color: [[setting:bodybgcolor]];
+    color: [[setting:bordercolor]];
 }
 
 .forumpost .header a {
@@ -67,7 +67,7 @@ span.unread {
     width: auto;
     border-width: 0 1px 1px;
     border-style: solid;
-    border-color: [[setting:bodybgcolor]];
+    border-color: [[setting:bordercolor]];
 }
 
 .forumpost.unread .maincontent {

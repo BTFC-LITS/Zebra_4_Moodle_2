@@ -22,7 +22,7 @@
  */
 
 .block {
-	border: 1px solid [[setting:bodybgcolor]];
+	border: 1px solid [[setting:bordercolor]];
 	margin-bottom: 4px;
 }
 

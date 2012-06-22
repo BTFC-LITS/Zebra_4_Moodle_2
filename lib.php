@@ -159,6 +159,14 @@ function zebra_process_css($css, $theme) {
     }
     $css = zebra_set_footerbgcolor($css, $footerbgcolor);
 
+    //Get the border color value from settings
+    if (!empty($theme->settings->bordercolor)) {
+        $bordercolor = $theme->settings->bordercolor;
+    } else {
+        $bordercolor = null;
+    }
+    $css = zebra_set_bordercolor($css, $bordercolor);
+
     //Get the calendar course events color
     if (!empty($theme->settings->calcourse)) {
         $calcourse = $theme->settings->calcourse;
@@ -516,6 +524,24 @@ function zebra_set_footerbgcolor($css, $footerbgcolor) {
         $replacement = '#DDD'; //Default color
     } else {
         $replacement = $footerbgcolor; //Color from settings page
+    }
+    $css = str_replace($tag, $replacement, $css);
+    return $css;
+}
+
+/**
+ * Sets the color used for the borders around page elements
+ *
+ * @param string $css
+ * @param mixed $bordercolor
+ * @return string
+ */
+function zebra_set_bordercolor($css, $bordercolor) {
+    $tag = '[[setting:bordercolor]]';
+    if (is_null($bordercolor)) {
+        $replacement = '#CCC'; //Default color
+    } else {
+        $replacement = $bordercolor; //Color from settings page
     }
     $css = str_replace($tag, $replacement, $css);
     return $css;

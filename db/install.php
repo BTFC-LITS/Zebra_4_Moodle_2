@@ -61,6 +61,11 @@ function xmldb_theme_zebra_install() {
     set_config('footerbgcolor', $currentsetting->seventhcolor, 'theme_zebra');
     // Remove seventhcolor
     unset_config('seventhcolor', 'theme_zebra');
+
+    // Create bordercolor
+    set_config('bordercolor', $currentsetting->eighthcolor, 'theme_zebra');
+    // Remove eighthcolor
+    unset_config('eighthcolor', 'theme_zebra');
     
     return true;
 }

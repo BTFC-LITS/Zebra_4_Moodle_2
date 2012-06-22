@@ -48,7 +48,7 @@
     margin-bottom: 8px;
     padding: 4px;
     width: auto;
-    border: 1px solid [[setting:bodybgcolor]];
+    border: 1px solid [[setting:bordercolor]];
 
 }
 
@@ -74,7 +74,7 @@
 }
 
 .categoryboxcontent {
-    border: 1px solid [[setting:bodybgcolor]];
+    border: 1px solid [[setting:bordercolor]];
 }
 
 .course_category_tree .category {

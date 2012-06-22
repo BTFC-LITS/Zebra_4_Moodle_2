@@ -68,33 +68,33 @@ require_once('header.php'); ?>
                             </div>
                         </div>
                     <?php } ?>
-                    <div id="page-content-wrapper">
-                        <div id="page-content">
-                            <div id="region-main-box">
-                                <div id="region-post-box">
-                                    <div id="region-main-wrap">
-                                        <div id="region-main">
-                                            <div class="region-content">
-                                                <?php echo $OUTPUT->main_content(); ?>
-                                            </div>
-                                        </div>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div id="page-content" class="clearfix">
+                    <div id="region-main-box">
+                        <div id="region-post-box">
+                            <div id="region-main-wrap">
+                                <div id="region-main">
+                                    <div class="region-content">
+                                        <?php echo $OUTPUT->main_content(); ?>
                                     </div>
-                                    <?php if ($hassidepre) { ?>
-                                        <div id="region-pre" class="block-region">
-                                            <div class="region-content">
-                                                <?php echo $OUTPUT->blocks_for_region('side-pre'); ?>
-                                            </div>
-                                        </div>
-                                    <?php } ?>
-                                    <?php if ($hassidepost) { ?>
-                                        <div id="region-post" class="block-region">
-                                            <div class="region-content">
-                                                <?php echo $OUTPUT->blocks_for_region('side-post'); ?>
-                                            </div>
-                                        </div>
-                                    <?php } ?>
                                 </div>
                             </div>
+                            <?php if ($hassidepre) { ?>
+                                <div id="region-pre" class="block-region">
+                                    <div class="region-content">
+                                        <?php echo $OUTPUT->blocks_for_region('side-pre'); ?>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                            <?php if ($hassidepost) { ?>
+                                <div id="region-post" class="block-region">
+                                    <div class="region-content">
+                                        <?php echo $OUTPUT->blocks_for_region('side-post'); ?>
+                                    </div>
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>

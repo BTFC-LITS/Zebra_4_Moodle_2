@@ -89,5 +89,14 @@ function xmldb_theme_zebra_upgrade($oldversion) {
 	upgrade_plugin_savepoint(true, 2012050900, 'theme', 'zebra');
     }
 
+    if ($oldversion < 2012062200) { // New Settings in 2.2.11
+        $currentsetting = get_config('theme_zebra');
+        set_config('bordercolor', $currentsetting->eighthcolor, 'theme_zebra'); // Create bordercolor
+        unset_config('eighthcolor', 'theme_zebra'); // Remove eighthcolor
+
+        // Upgrade version number
+        upgrade_plugin_savepoint(true, 2012062200, 'theme', 'zebra');
+    }
+
     return true;
 }

@@ -174,6 +174,14 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 10);
     $settings->add($setting);
 
+    //Set border color
+    $name = 'theme_zebra/bordercolor';
+    $title = get_string('bordercolor','theme_zebra');
+    $description = get_string('bordercolordesc', 'theme_zebra');
+    $default = '#CCC';
+    $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 10);
+    $settings->add($setting);
+
     //This is the descriptor for the following Moodle color settings
     $name = 'theme_zebra/moodlecolorsinfo';
     $heading = get_string('moodlecolorsinfo', 'theme_zebra');

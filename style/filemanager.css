@@ -26,13 +26,11 @@
 }
 
 .filemanager .fp-navbar {
-    border-color: [[setting:bodybgcolor]];
+    border-color: [[setting:bordercolor]];
 }
 
 #dndupload-status {
     width: 100%;
     border: 0 none;
-    border-bottom: 1px solid [[setting:bodybgcolor]];
     padding: 4px;
-    background: [[setting:contentbgcolor]];
 }

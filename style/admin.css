@@ -49,7 +49,7 @@
 
 #page-admin-qbehaviours .disabled,
 #page-admin-qtypes .disabled {
-	color: [[setting:bodybgcolor]];
+	color: [[setting:bordercolor]];
 }
 
 #adminsettings fieldset,
@@ -200,7 +200,7 @@
 }
 
 #page-admin-setting-themesettings #admin-devicedetectregex table {
-	border: 1px solid [[setting:bodybgcolor]];
+	border: 1px solid [[setting:bordercolor]];
 }
 
 @media screen and (min-width:[[setting:threecolmin]]) {
@@ -213,13 +213,13 @@
 	#adminsettings .form-item .form-setting {
 		margin: 0 0 0 224px;
 		padding: 0 0 0 4px;
-		border-left: 1px solid [[setting:bodybgcolor]];
+		border-left: 1px solid [[setting:bordercolor]];
 	}
 
 	#adminsettings .form-item .form-description {
 		margin: 0 0 0 224px;
 		padding: 4px 0 0 4px;
-		border-left: 1px solid [[setting:bodybgcolor]];
+		border-left: 1px solid [[setting:bordercolor]];
 	}
 
 	.form-buttons {

@@ -104,6 +104,8 @@ $string['headerbgcolor'] = 'Header background color';
 $string['headerbgcolordesc'] = '<p>Header background color.</p>';
 $string['footerbgcolor'] = 'Footer background color';
 $string['footerbgcolordesc'] = '<p>Footer background color.</p><p>Using <code>transparent</code> will cause the footer to display the value of <code>contentbgcolor</code> not <code>bodybgcolor</code>.  This should be set to the same value as <code>bodybgcolor</code> for a transparent effect.</p>';
+$string['bordercolor'] = 'Border color';
+$string['bordercolordesc'] = '<p>Color for the borders around page elements.</p>';
 
 $string['moodlecolorsinfo'] = 'Moodle colors settings';
 $string['moodlecolorsinfodesc'] = '<p>Change specific colors that are defined in the Moodle core and are outside of the general colors defined above.  These include things like <code>.notifysuccess</code> and calendar event type colors.  These probably do not need to be adjusted unless you have a specific conflict with the general color settings above.</p>';

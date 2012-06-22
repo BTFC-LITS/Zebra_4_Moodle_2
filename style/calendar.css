@@ -23,7 +23,7 @@
 
 .calendartable th,
 .calendartable td {
-    border-color: [[setting:bodybgcolor]];
+    border-color: [[setting:bordercolor]];
 }
 
 .calendar_event_course {background-color:[[setting:calcourse]];}
