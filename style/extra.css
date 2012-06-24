@@ -24,9 +24,13 @@
 /* Profile Block */
 
 .headermain {
-	position: absolute;
 	bottom: 0;
 	float: none;
+    margin: 0;
+    padding: 0 4px;
+    border-top: 1px solid [[setting:bordercolor]];
+    border-bottom: 1px solid [[setting:bordercolor]];
+    font-size: 1.7em;
 }
 
 #profileblock {
@@ -45,6 +49,12 @@
 #user-pic .userpicture {
     width: 80px;
     height: 80px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
 }
 
 #user-pic .defaultuserpic {

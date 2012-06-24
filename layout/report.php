@@ -29,7 +29,6 @@ require_once('header.php'); ?>
         <div id="page-inner-wrapper">
             <div id="page-header-wrapper">
                 <div id="page-header" class="clearfix">
-                    <h1 class="headermain"><?php echo $headeralt; ?></h1>
                     <div id="profileblock">
 			<?php if ($haslogininfo) {
 			    if (isloggedin()) {
@@ -48,7 +47,7 @@ require_once('header.php'); ?>
                 </div>
                 <div id="page-border-wrapper">
                     <?php if ($hascustommenu) { ?>
-                        <div id="custommenu-wrapper">
+                        <div id="custommenu-wrapper" class="clearfix">
                             <div id="custommenu">
 				<?php if ($hashomeicon) {
 				    echo '<a class="home" href="' . $homeurl . '"><div>&nbsp;</div></a>';
@@ -60,6 +59,7 @@ require_once('header.php'); ?>
 			    </div>
                         </div>
                     <?php } ?>
+                    <h1 class="headermain"><?php echo $headeralt; ?></h1>
                     <?php if ($hasnavbar) { ?>
                         <div id="navbar-wrapper">
                             <div class="navbar clearfix">
@@ -68,24 +68,24 @@ require_once('header.php'); ?>
                             </div>
                         </div>
                     <?php } ?>
-                    <div id="page-content-wrapper">
-                        <div id="page-content" class="clearfix">
-                            <div id="report-main-content">
-                                <div class="region-content">
-                                    <?php echo $OUTPUT->main_content(); ?>
-                                </div>
-                            </div>
-                            <?php if ($hassidepre) { ?>
-                                <div id="report-region-wrap">
-                                    <div id="report-region-pre" class="block-region">
-                                        <div class="region-content">
-                                            <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php } ?>
+				</div>
+			</div>
+            <div id="page-content-wrapper">
+                <div id="page-content" class="clearfix">
+                    <div id="report-main-content">
+                        <div class="region-content">
+                            <?php echo $OUTPUT->main_content(); ?>
                         </div>
                     </div>
+                    <?php if ($hassidepre) { ?>
+                        <div id="report-region-wrap">
+                            <div id="report-region-pre" class="block-region">
+                                <div class="region-content">
+                                    <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
                 </div>
-	    </div>
+            </div>
 	    <?php require_once('footer.php');

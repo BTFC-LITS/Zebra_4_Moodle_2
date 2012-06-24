@@ -29,7 +29,6 @@ require_once('header.php'); ?>
         <div id="page-inner-wrapper">
             <div id="page-header-wrapper">
                 <div id="page-header" class="clearfix">
-                    <h1 class="headermain"><?php echo $headeralt; ?></h1>
                     <div id="profileblock">
 			<?php if ($haslogininfo) {
 			    if (isloggedin()) {
@@ -48,7 +47,7 @@ require_once('header.php'); ?>
                 </div>
                 <div id="page-border-wrapper">
                     <?php if ($hascustommenu) { ?>
-                        <div id="custommenu-wrapper">
+                        <div id="custommenu-wrapper" class="clearfix">
                             <div id="custommenu">
 				<?php if ($hashomeicon) {
 				    echo '<a class="home" href="' . $homeurl . '"><div>&nbsp;</div></a>';
@@ -60,6 +59,7 @@ require_once('header.php'); ?>
 			    </div>
                         </div>
                     <?php } ?>
+                    <h1 class="headermain"><?php echo $headeralt; ?></h1>
                     <?php if ($hasnavbar) { ?>
                         <div id="navbar-wrapper">
                             <div class="navbar clearfix">

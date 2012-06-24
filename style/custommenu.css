@@ -28,11 +28,10 @@
     text-shadow:0 1px 0 [[setting:fontcolor]];
 }
 
-#navbar-wrapper,
-#page-content-wrapper {
-    border-radius:5px 5px 0 0;
-    -moz-border-radius:5px 5px 0 0;
-    -webkit-border-radius:5px 5px 0 0;
+#custommenu-wrapper {
+    border-radius:8px 8px 0 0;
+    -moz-border-radius:8px 8px 0 0;
+    -webkit-border-radius:8px 8px 0 0;
     background-clip:padding-box;
     -moz-background-clip:padding;
     -webkit-background-clip:padding-box;
@@ -149,9 +148,9 @@
     color: [[setting:contentbgcolor]]!important;
     text-decoration: none!important;
     border-right: 1px solid [[setting:fontcolor]];
-    -moz-border-radius:5px 0 0 0;
-    -webkit-border-radius:5px 0 0 0;
-    border-radius:5px 0 0 0;
+    -moz-border-radius:8px 0 0 0;
+    -webkit-border-radius:8px 0 0 0;
+    border-radius:8px 0 0 0;
     -moz-background-clip:padding;
     -webkit-background-clip:padding-box;
     background-clip:padding-box;
@@ -171,7 +170,7 @@
 
 /* No home link */
 .no_homeicon #custommenu .first-of-type li:first-of-type .yui3-menu-label-active  {
-    border-radius: 5px 0 0 0; /* Preserve the border-radius on the first li when no home icon */
+    border-radius: 8px 0 0 0; /* Preserve the border-radius on the first li when no home icon */
 }
 
 /* Calendar Link */
@@ -191,9 +190,9 @@
     -moz-box-shadow: 0 1px [[setting:fontcolor]] inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px [[setting:fontcolor]] inset;
     -webkit-box-shadow: 0 1px [[setting:fontcolor]] inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px [[setting:fontcolor]] inset;
     box-shadow: 0 1px [[setting:fontcolor]] inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px [[setting:fontcolor]] inset;
-    -moz-border-radius:0 5px 0 0;
-    -webkit-border-radius:0 5px 0 0;
-    border-radius:0 5px 0 0;
+    -moz-border-radius:0 8px 0 0;
+    -webkit-border-radius:0 8px 0 0;
+    border-radius:0 8px 0 0;
     -moz-background-clip:padding;
     -webkit-background-clip:padding-box;
     background-clip:padding-box;

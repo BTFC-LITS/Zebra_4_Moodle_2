@@ -36,6 +36,11 @@
     margin-bottom: 4px;
 }
 
+.course-content li.section .content {
+    overflow: hidden;
+    margin: 0 !important;
+}
+
 .course-content li.current {
     border-color: [[setting:linkcolor]];
     background: none;
@@ -81,6 +86,14 @@ table.generalbox {
     min-height: [[setting:logourlheight]];
 }
 
+#page-header .logininfo {
+    color: [[setting:bordercolor]];
+}
+
+#page-header .logininfo a {
+    color: [[setting:contentbgcolor]];
+}
+
 /**
  * Navbar
  */
@@ -115,7 +128,7 @@ table.generalbox {
 }
 
 #page-footer a {
-    color: #7FADD6;
+    color: [[setting:contentbgcolor]];
 }
 
 /**

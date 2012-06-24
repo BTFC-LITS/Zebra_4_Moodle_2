@@ -86,6 +86,7 @@ a:active {
     width: 100%;
 }
 
+.headermain,
 .sitetopic,
 .coursebox,
 .block,
@@ -114,6 +115,13 @@ a:active {
 
 #page-content-wrapper, #page-content {
     background-color: [[setting:contentbgcolor]];
+    padding-bottom: 4px;
+    -moz-border-radius: 0 0 8px 8px;
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
 }
 
 .side-pre-only #region-post,
