@@ -68,8 +68,8 @@ require_once('header.php'); ?>
                             </div>
                         </div>
                     <?php } ?>
-				</div>
-			</div>
+		</div>
+            </div>
             <div id="page-content-wrapper">
                 <div id="page-content" class="clearfix">
                     <div id="report-main-content">
