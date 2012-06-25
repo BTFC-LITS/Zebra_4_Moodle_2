@@ -26,6 +26,7 @@
 #custommenu {
     background-color: [[setting:linkcolor]];
     text-shadow:0 1px 0 [[setting:fontcolor]];
+    z-index: 5;
 }
 
 #custommenu-wrapper {

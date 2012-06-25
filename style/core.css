@@ -94,17 +94,27 @@ table.generalbox {
     color: [[setting:contentbgcolor]];
 }
 
+.headermain {
+    float: none;
+    margin: 0;
+    padding: 4px 6px;
+    border-top: 1px solid [[setting:bordercolor]];
+    border-bottom: 1px solid [[setting:bordercolor]];
+    font-size: 1.7em;
+}
+
 /**
  * Navbar
  */
 
 #navbar-wrapper {
-    background-color: [[setting:columnbgcolor]];
+    background-color: [[setting:contentbgcolor]];
+    border-bottom: 1px solid [[setting:bordercolor]];
+    padding: 0 2px;
 }
 
 .navbar {
-    background-color: [[setting:columnbgcolor]];
-    border-bottom: 1px solid [[setting:bordercolor]];
+    background-color: [[setting:contentbgcolor]];
 }
 
 .breadcrumb,

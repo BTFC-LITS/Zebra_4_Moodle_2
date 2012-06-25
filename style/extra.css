@@ -23,20 +23,9 @@
 
 /* Profile Block */
 
-.headermain {
-	bottom: 0;
-	float: none;
-    margin: 0;
-    padding: 0 4px;
-    border-top: 1px solid [[setting:bordercolor]];
-    border-bottom: 1px solid [[setting:bordercolor]];
-    font-size: 1.7em;
-}
-
 #profileblock {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 7px;
+    float: right;
+    margin: 10px 0 0;
     text-align: right;
     width: 100%;
 }
@@ -89,3 +78,9 @@
  */
 
 [[setting:customcss]]
+
+/* Remove width restriction for assignment grading page */
+
+#page-mod-assignment-submissions #page {
+    max-width: 100%;
+}

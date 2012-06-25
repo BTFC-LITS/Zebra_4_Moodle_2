@@ -53,6 +53,10 @@
     background-image: url([[pix:theme|core/yui2-treeview-sprite-rtl]]);
 }
 
-.headermain {
+.ie .headermain {
     background: [[setting:columnbgcolor]];
+}
+
+.ie7 .coursebox {
+    min-height: 0;
 }
