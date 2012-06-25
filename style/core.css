@@ -99,11 +99,11 @@ table.generalbox {
  */
 
 #navbar-wrapper {
-    background-color: [[setting:linkcolor]];
+    background-color: [[setting:columnbgcolor]];
 }
 
 .navbar {
-    background-color: [[setting:contentbgcolor]];
+    background-color: [[setting:columnbgcolor]];
     border-bottom: 1px solid [[setting:bordercolor]];
 }
 
