@@ -60,3 +60,49 @@
 .ie7 .coursebox {
     min-height: 0;
 }
+
+.ie7 #custommenu {
+    z-index: 5;
+    background: transparent;
+}
+
+.ie #custommenu-wrapper {
+    background: url([[pix:theme|menu/menu_bg]]) repeat-x 0 0 [[setting:linkcolor]];
+}
+
+.ie #custommenu .calendar {
+    background: url([[pix:theme|menu/cal_bg]]) repeat-x 0 0 [[setting:fontcolor]];
+}
+
+.ie #custommenu .yui3-menu-label-active,
+.ie #custommenu .yui3-menu-label-menuvisible,
+.ie #custommenu .yui3-menuitem-active,
+.ie #custommenu .calendar:hover,
+.ie #custommenu .home:hover {
+    background: url([[pix:theme|menu/hover_bg]]) repeat-x 0 0 [[setting:hovercolor]];
+}
+
+.ie9 #custommenu-wrapper {
+    background: url([[pix:theme|menu/menu_bg_no_hl]]) repeat-x 0 2px [[setting:linkcolor]];
+}
+
+.ie9 #custommenu .calendar {
+    background: url([[pix:theme|menu/cal_bg_no_hl]]) repeat-x 0 2px [[setting:fontcolor]];
+}
+
+.ie9 #custommenu .yui3-menu-label-active,
+.ie9 #custommenu .yui3-menu-label-menuvisible,
+.ie9 #custommenu .yui3-menuitem-active,
+.ie9 #custommenu .calendar:hover,
+.ie9 #custommenu .home:hover {
+    background: url([[pix:theme|menu/hover_bg_no_hl]]) repeat-x 0 2px [[setting:hovercolor]];
+}
+
+.ie .yui3-menu-content {
+    border: none !important;
+}
+
+.ie .yui3-menuitem-content, .ie .yui3-menu-label {
+    border-top: none !important;
+    border-bottom: none !important;
+}
