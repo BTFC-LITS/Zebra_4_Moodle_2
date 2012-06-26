@@ -21,14 +21,14 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/* Fix: select menus from not registering as hovered */
+/* Fix: select menus from not registering as hovered
 .ie.editing .block .section_add_menus,
 .ie.editing .section .section_add_menus,
 .ie.editing .sitetopic .section_add_menus {
     visibility: visible;
     filter: none;
     opacity: 1;
-}
+} */
 
 /* Fix YUI 2 Treeview for Right to left languages */
 .dir-rtl .ygtvtn,
@@ -53,8 +53,13 @@
     background-image: url([[pix:theme|core/yui2-treeview-sprite-rtl]]);
 }
 
-.ie .headermain {
+.ie .headermain,
+.opera .headermain {
     background: [[setting:columnbgcolor]];
+}
+
+.ie7 .breadcrumb .arrow {
+    margin-left: 4px;
 }
 
 .ie7 .coursebox {
@@ -82,11 +87,13 @@
     background: url([[pix:theme|menu/hover_bg]]) repeat-x 0 0 [[setting:hovercolor]];
 }
 
-.ie9 #custommenu-wrapper {
+.ie9 #custommenu-wrapper,
+.opera #custommenu-wrapper {
     background: url([[pix:theme|menu/menu_bg_no_hl]]) repeat-x 0 2px [[setting:linkcolor]];
 }
 
-.ie9 #custommenu .calendar {
+.ie9 #custommenu .calendar,
+.opera #custommenu .calendar {
     background: url([[pix:theme|menu/cal_bg_no_hl]]) repeat-x 0 2px [[setting:fontcolor]];
 }
 
@@ -94,7 +101,12 @@
 .ie9 #custommenu .yui3-menu-label-menuvisible,
 .ie9 #custommenu .yui3-menuitem-active,
 .ie9 #custommenu .calendar:hover,
-.ie9 #custommenu .home:hover {
+.ie9 #custommenu .home:hover,
+.opera #custommenu .yui3-menu-label-active,
+.opera #custommenu .yui3-menu-label-menuvisible,
+.opera #custommenu .yui3-menuitem-active,
+.opera #custommenu .calendar:hover,
+.opera #custommenu .home:hover {
     background: url([[pix:theme|menu/hover_bg_no_hl]]) repeat-x 0 2px [[setting:hovercolor]];
 }
 
@@ -102,7 +114,12 @@
     border: none !important;
 }
 
-.ie .yui3-menuitem-content, .ie .yui3-menu-label {
+.ie .yui3-menuitem-content,
+.ie .yui3-menu-label {
     border-top: none !important;
     border-bottom: none !important;
+}
+
+.ie .yui3-menuitem-active .yui3-menuitem-content {
+    background-color: [[setting:linkcolor]] !important;
 }
