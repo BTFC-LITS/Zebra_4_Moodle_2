@@ -120,6 +120,6 @@
     border-bottom: none !important;
 }
 
-.ie .yui3-menuitem-active .yui3-menuitem-content {
+.ie .yui3-menu-content .yui3-menu .yui3-menuitem-active .yui3-menuitem-content {
     background-color: [[setting:linkcolor]] !important;
 }

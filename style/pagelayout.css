@@ -34,6 +34,10 @@ body {
     background: url([[setting:backgroundurl]]) no-repeat fixed center top transparent;
 }
 
+body.android, body.ios {
+    background: [[setting:bodybgcolor]];
+}
+
 hr {
     background-color: [[setting:bordercolor]];
     border-width: 0;
