@@ -42,7 +42,6 @@ hr {
     background-color: [[setting:bordercolor]];
     border-width: 0;
     color: [[setting:bordercolor]];
-    height: 1px;
     line-height: 0;
     page-break-after: always;
     text-align: center;
@@ -94,6 +93,7 @@ a:active {
 .headermain,
 .sitetopic,
 .coursebox,
+.course-content li.section,
 .block,
 #dockeditempanel {
     background:-moz-linear-gradient(center top, [[setting:colorscheme]] 0%, transparent 15px) [[setting:columnbgcolor]];

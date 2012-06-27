@@ -43,7 +43,10 @@
 
 .course-content li.current {
     border-color: [[setting:linkcolor]];
-    background: none;
+}
+
+.course-content li.hidden {
+    background: #EEE;
 }
 
 .red,
