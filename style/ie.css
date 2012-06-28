@@ -21,14 +21,14 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/* Fix: select menus from not registering as hovered
+/* Fix: select menus from not registering as hovered */
 .ie.editing .block .section_add_menus,
 .ie.editing .section .section_add_menus,
 .ie.editing .sitetopic .section_add_menus {
     visibility: visible;
     filter: none;
     opacity: 1;
-} */
+}
 
 /* Fix YUI 2 Treeview for Right to left languages */
 .dir-rtl .ygtvtn,
