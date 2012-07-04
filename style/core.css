@@ -36,6 +36,11 @@
     margin-bottom: 4px;
 }
 
+.course-content li.section .left,
+.course-content li.section .right {
+    width: 36px !important;
+}
+
 .course-content li.section .content {
     overflow: hidden;
     margin: 0 !important;
@@ -43,10 +48,23 @@
 
 .course-content li.current {
     border-color: [[setting:linkcolor]];
+    background: #FAFAFA;
 }
 
 .course-content li.hidden {
-    background: #EEE;
+    background: #DDD;
+}
+
+.course-content h3.sectionname,
+.course-content h3.weekdates {
+    color: [[setting:contentbgcolor]];
+    text-shadow: -1px -1px 0 [[setting:bodybgcolor]];
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: [[setting:fontcolor]];
+    margin: 0.5em 0 !important;
+    padding: 0.5em !important;
 }
 
 .red,
@@ -104,6 +122,7 @@ table.generalbox {
     border-top: 1px solid [[setting:bordercolor]];
     border-bottom: 1px solid [[setting:bordercolor]];
     font-size: 1.7em;
+    text-shadow: 1px 1px 0 [[setting:bordercolor]];
 }
 
 /**
