@@ -58,11 +58,11 @@
 .course-content h3.sectionname,
 .course-content h3.weekdates {
     color: [[setting:contentbgcolor]];
-    text-shadow: -1px -1px 0 [[setting:bodybgcolor]];
+    text-shadow: 1px 1px 0 [[setting:fontcolor]];
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    background: [[setting:fontcolor]];
+    background: #94979E;
     margin: 0.5em 0 !important;
     padding: 0.5em !important;
 }
