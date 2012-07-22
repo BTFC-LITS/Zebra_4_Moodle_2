@@ -101,6 +101,10 @@
 
 #custommenu .custom_menu_submenu .yui3-menu-content {
     background: [[setting:fontcolor]];
+    opacity: 0.95;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    filter: alpha(opacity=95);
+    text-shadow: 0 1px 0 #000;
 }
 
 /* Sub Menu Items */
@@ -180,6 +184,7 @@
     line-height: 30px;
     padding: 0 10px;
     color: [[setting:contentbgcolor]]!important;
+    text-shadow: 0 1px 0 #000;
     text-decoration: none!important;
     border-left: 1px solid [[setting:fontcolor]];
     background:-moz-linear-gradient(center top , [[setting:menucolorscheme]] 0%, transparent 66%) [[setting:fontcolor]];

@@ -23,6 +23,9 @@
 
 .block {
 	border: 1px solid [[setting:bordercolor]];
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 	margin-bottom: 4px;
 }
 

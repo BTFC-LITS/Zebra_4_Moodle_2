@@ -29,6 +29,9 @@
 
 .path-mod-forum .forumheaderlist {
     border: 1px solid [[setting:bordercolor]];
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }
 
 .forumpost {
@@ -38,8 +41,11 @@
 .forumpost .header {
     height: 35px;
     border-bottom: 3px solid;
-    background-color: [[setting:linkcolor]];
+    background-color: [[setting:fontcolor]];
     border-bottom-color: [[setting:bordercolor]];
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
 }
 
 .forumpost.unread .header {
@@ -68,6 +74,9 @@ span.unread {
     border-width: 0 1px 1px;
     border-style: solid;
     border-color: [[setting:bordercolor]];
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
 }
 
 .forumpost.unread .maincontent {
@@ -79,6 +88,9 @@ span.unread {
 
 .forumpost .picture img {
     margin: 0;
+    border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
 }
 
 .forumpost .row .options {
