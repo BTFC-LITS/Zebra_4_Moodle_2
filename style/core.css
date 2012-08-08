@@ -32,7 +32,7 @@
  */
 
 h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0 1px 1px [[setting:bordercolor]];
+    text-shadow: 0 1px 0 #FFF;
 }
 
 .course-content li.section {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 .course-content h3.weekdates {
     color: [[setting:contentbgcolor]];
     background: [[setting:fontcolor]];
-    text-shadow: 0 1px 1px #000;
+    text-shadow: 0 1px 0 #000;
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 .course-content li.current h3.sectionname,
 .course-content li.current h3.weekdates {
     background: [[setting:linkcolor]];
+    text-shadow: 0 1px 0 [[setting:fontcolor]];
 }
 
 .course-content li.hidden h3.sectionname,
@@ -179,8 +180,45 @@ table.generalbox {
     padding: 4px 0;
 }
 
+#page-footer .sitelink {
+    margin: 6px;
+}
+
 #page-footer a {
     color: [[setting:contentbgcolor]];
+}
+
+#page-footer .homelink a {
+    padding: 6px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background-clip:padding-box;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    text-shadow: 0 1px 0 #000;
+    text-decoration: none;
+    background:-moz-linear-gradient(center top, [[setting:menucolorscheme]] 0%, transparent 66%) [[setting:fontcolor]];
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,[[setting:menucolorscheme]]),color-stop(66%,transparent)) [[setting:fontcolor]];
+    background:-webkit-linear-gradient(top, [[setting:menucolorscheme]] 0%,transparent 66%) [[setting:fontcolor]];
+    background:-ms-linear-gradient(top, [[setting:menucolorscheme]] 0%,transparent 66%) [[setting:fontcolor]];
+    background:linear-gradient(top, [[setting:menucolorscheme]] 0%,transparent 66%) [[setting:fontcolor]];
+    -moz-box-shadow: 0 1px [[setting:fontcolor]] inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px [[setting:fontcolor]] inset;
+    -webkit-box-shadow: 0 1px [[setting:fontcolor]] inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px [[setting:fontcolor]] inset;
+    box-shadow: 0 1px [[setting:fontcolor]] inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px [[setting:fontcolor]] inset;
+}
+
+#page-footer .homelink a:hover {
+    background:-moz-linear-gradient(center top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) [[setting:hovercolor]]!important;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,[[setting:menucolorscheme]]), color-stop(100%,rgba(0,0,0,0.3))) [[setting:hovercolor]]!important;
+    background:-webkit-linear-gradient(top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) [[setting:hovercolor]]!important;
+    background:-ms-linear-gradient(top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) [[setting:hovercolor]]!important;
+    background:linear-gradient(top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) [[setting:hovercolor]]!important; /* Override Base Sheet "Core" Line 607 */
+    -moz-box-shadow: 0 1px [[setting:hovercolor]] inset, 0 2px [[setting:menucolorscheme]] inset;
+    -webkit-box-shadow: 0 1px [[setting:hovercolor]] inset, 0 2px [[setting:menucolorscheme]] inset;
+    box-shadow: 0 1px [[setting:hovercolor]] inset, 0 2px [[setting:menucolorscheme]] inset;
+    text-shadow:0 1px 0 [[setting:fontcolor]];
+    background-color: [[setting:hovercolor]];
 }
 
 /**

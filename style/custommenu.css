@@ -95,6 +95,7 @@
     -moz-box-shadow: 0 1px [[setting:hovercolor]] inset, 0 2px [[setting:menucolorscheme]] inset;
     -webkit-box-shadow: 0 1px [[setting:hovercolor]] inset, 0 2px [[setting:menucolorscheme]] inset;
     box-shadow: 0 1px [[setting:hovercolor]] inset, 0 2px [[setting:menucolorscheme]] inset;
+    text-shadow:0 1px 0 [[setting:fontcolor]];
 }
 
 /* Sub Menu */

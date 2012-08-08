@@ -145,7 +145,7 @@ a:active {
 }
 
 .region-content {
-    padding: 4px 4px 0 4px;
+    padding: 6px 6px 0 6px;
 }
 
 #region-main {
@@ -159,11 +159,15 @@ a:active {
 }
 
 #region-main .region-content {
-    padding-bottom: 4px;
+    padding: 6px;
+}
+
+#region-pre .region-content {
+    padding: 6px 0 0 6px;
 }
 
 #region-post .region-content {
-    padding-top: 0;
+    padding: 0 6px 0 0;
 }
 
 .side-post-only #region-post .region-content {
@@ -257,7 +261,7 @@ a:active {
     }
 
     #region-post .region-content {
-        padding-top: 4px;
+        padding-top: 6px;
     }
 
     .side-pre-only #region-post-box {
