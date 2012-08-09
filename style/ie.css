@@ -78,7 +78,8 @@
     background: url([[pix:theme|menu/menu_bg]]) repeat-x 0 0 [[setting:linkcolor]];
 }
 
-.ie #custommenu .calendar {
+.ie #custommenu .calendar,
+.ie #page-footer .homelink a {
     background: url([[pix:theme|menu/cal_bg]]) repeat-x 0 0 [[setting:fontcolor]];
 }
 
@@ -86,7 +87,8 @@
 .ie #custommenu .yui3-menu-label-menuvisible,
 .ie #custommenu .yui3-menuitem-active,
 .ie #custommenu .calendar:hover,
-.ie #custommenu .home:hover {
+.ie #custommenu .home:hover,
+.ie #page-footer .homelink a:hover {
     background: url([[pix:theme|menu/hover_bg]]) repeat-x 0 0 [[setting:hovercolor]];
 }
 
@@ -96,7 +98,9 @@
 }
 
 .ie9 #custommenu .calendar,
-.opera #custommenu .calendar {
+.ie9 #page-footer .homelink a,
+.opera #custommenu .calendar,
+.opera #page-footer .homelink a {
     background: url([[pix:theme|menu/cal_bg_no_hl]]) repeat-x 0 2px [[setting:fontcolor]];
 }
 
@@ -105,11 +109,13 @@
 .ie9 #custommenu .yui3-menuitem-active,
 .ie9 #custommenu .calendar:hover,
 .ie9 #custommenu .home:hover,
+.ie9 #page-footer .homelink a:hover,
 .opera #custommenu .yui3-menu-label-active,
 .opera #custommenu .yui3-menu-label-menuvisible,
 .opera #custommenu .yui3-menuitem-active,
 .opera #custommenu .calendar:hover,
-.opera #custommenu .home:hover {
+.opera #custommenu .home:hover,
+.opera #page-footer .homelink a:hover {
     background: url([[pix:theme|menu/hover_bg_no_hl]]) repeat-x 0 2px [[setting:hovercolor]];
 }
 
