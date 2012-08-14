@@ -184,6 +184,10 @@ table.generalbox {
     margin: 6px;
 }
 
+#page-footer .sitelink img {
+    vertical-align: middle;
+}
+
 #page-footer a {
     color: [[setting:contentbgcolor]];
 }
