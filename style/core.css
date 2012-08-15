@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .course-content h3.sectionname,
 .course-content h3.weekdates {
     color: [[setting:contentbgcolor]];
-    background: [[setting:fontcolor]];
+    background: #393939;
     text-shadow: 0 1px 0 #000;
     border-radius: 6px;
     -moz-border-radius: 6px;
@@ -82,8 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .course-content li.hidden h3.sectionname,
 .course-content li.hidden h3.weekdates {
-    background: [[setting:bordercolor]];
-    text-shadow: 0 1px 1px [[setting:fontcolor]];
+    background: #BCBDC0;
+    text-shadow: 0 1px 0 [[setting:fontcolor]];
 }
 
 .red,
@@ -130,7 +130,8 @@ table.generalbox {
 }
 
 #page-header .logininfo {
-    color: [[setting:bordercolor]];
+    color: #BCBDC0;
+    text-shadow: 0 1px 0 #000;
 }
 
 #page-header .logininfo a {
@@ -175,7 +176,8 @@ table.generalbox {
 }
 
 #page-footer {
-    color: [[setting:bordercolor]];
+    color: #BCBDC0;
+    text-shadow: 0 1px 0 [[setting:fontcolor]];
     background-color: [[setting:footerbgcolor]];
     padding: 4px 0;
 }

@@ -38,10 +38,14 @@
     border: 0 none;
 }
 
+.blog_entry {
+    border-collapse: separate;
+}
+
 .forumpost .header {
     height: 35px;
     border-bottom: 3px solid;
-    background-color: [[setting:fontcolor]];
+    background-color: #393939;
     border-bottom-color: [[setting:bordercolor]];
     border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
@@ -49,15 +53,22 @@
 }
 
 .blog_entry .picture.header {
+    width: 35px;
+    background: [[setting:bordercolor]];
+    border-bottom-width: 0;
     border-radius: 4px 0 0 0;
     -moz-border-radius: 4px 0 0 0;
     -webkit-border-radius: 4px 0 0 0;
+    padding: 0;
+    vertical-align: top;
 }
 
 .blog_entry .topic.header {
     border-radius: 0 4px 0 0;
     -moz-border-radius: 0 4px 0 0;
     -webkit-border-radius: 0 4px 0 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .forumpost.unread .header {
@@ -70,10 +81,12 @@ span.unread {
 
 .forumpost .header .subject {
     color: [[setting:contentbgcolor]];
+    text-shadow: 0 1px 0 #000;
 }
 
 .forumpost .header .author {
-    color: [[setting:bordercolor]];
+    color: #BCBDC0;
+    text-shadow: 0 1px 0 #000;
 }
 
 .forumpost .header a {
@@ -104,13 +117,6 @@ span.unread {
     border-radius: 4px 0 0 0;
     -moz-border-radius: 4px 0 0 0;
     -webkit-border-radius: 4px 0 0 0;
-}
-
-.blog_entry .picture img {
-    margin: 0;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
 }
 
 .forumpost .row .options {
@@ -155,6 +161,8 @@ span.unread {
 
 .blog_entry .content {
     background: #FAFAFA;
+    border-right: 1px solid [[setting:bordercolor]];
+    border-bottom: 1px solid [[setting:bordercolor]];
     border-radius: 0 0 4px 0;
     -moz-border-radius: 0 0 4px 0;
     -webkit-border-radius: 0 0 4px 0;
