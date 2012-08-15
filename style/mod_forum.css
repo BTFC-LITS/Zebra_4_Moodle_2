@@ -48,6 +48,18 @@
     -webkit-border-radius: 4px 4px 0 0;
 }
 
+.blog_entry .picture.header {
+    border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+}
+
+.blog_entry .topic.header {
+    border-radius: 0 4px 0 0;
+    -moz-border-radius: 0 4px 0 0;
+    -webkit-border-radius: 0 4px 0 0;
+}
+
 .forumpost.unread .header {
     border-color: [[setting:hovercolor]];
 }
@@ -69,6 +81,7 @@ span.unread {
 }
 
 .forumpost .maincontent {
+    background: #FAFAFA;
     padding: 4px;
     width: auto;
     border-width: 0 1px 1px;
@@ -91,6 +104,13 @@ span.unread {
     border-radius: 4px 0 0 0;
     -moz-border-radius: 4px 0 0 0;
     -webkit-border-radius: 4px 0 0 0;
+}
+
+.blog_entry .picture img {
+    margin: 0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }
 
 .forumpost .row .options {
@@ -124,4 +144,18 @@ span.unread {
 
 .forumpost .row .left .grouppictures a:last-of-type {
     padding-bottom: 0;
+}
+
+.blog_entry .left.side {
+    background: [[setting:bordercolor]];
+    border-radius: 0 0 0 4px;
+    -moz-border-radius: 0 0 0 4px;
+    -webkit-border-radius: 0 0 0 4px;
+}
+
+.blog_entry .content {
+    background: #FAFAFA;
+    border-radius: 0 0 4px 0;
+    -moz-border-radius: 0 0 4px 0;
+    -webkit-border-radius: 0 0 4px 0;
 }
