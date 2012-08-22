@@ -147,6 +147,10 @@ table.generalbox {
     font-size: 1.7em;
 }
 
+.path-grade-report-grader h1.headermain {
+    text-align: left;
+}
+
 /**
  * Navbar
  */

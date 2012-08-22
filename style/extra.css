@@ -64,12 +64,6 @@
 	padding: 0 10px;
 }
 
-/* Remove width restriction for assignment grading page */
-
-#page-mod-assignment-submissions #page {
-    max-width: 100%;
-}
-
 /**
  * autohide CSS
  * This adds the special autohide css in lib.php if the setting is enabled.

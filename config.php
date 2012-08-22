@@ -43,6 +43,7 @@ $THEME->sheets = array(
     'course',	    //Overrides for the course sheet from Base
     'custommenu',   //Applies style to the custommenu
     'dock',         //Derived from Rebase
+    'grade',
     'mod_forum',    //Overrides for forum
     'mod_resource', //Overrides for resources
     'extra',        //Extra stuff that doesn't fit the above
