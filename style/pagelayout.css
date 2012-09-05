@@ -77,12 +77,13 @@ a:active {
     position: relative;
 }
 
-/* Remove width restriction for admin pages and certain grading pages */
+/* Remove width restriction for all admin pages and selected course pages */
 
 .admin #page,
 #page-grade-report-grader-index #page,
 #page-grade-edit-tree-index #page,
-#page-mod-assignment-submissions #page {
+#page-mod-assignment-submissions #page,
+#page-mod-resource-view #page {
     max-width: 100%;
 }
 
