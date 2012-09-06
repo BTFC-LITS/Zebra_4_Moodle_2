@@ -106,3 +106,8 @@
 .path-course-view li.activity form.togglecompletion {
     right: 0;
 }
+
+.sitetopic .section li.activity,
+.course-content .section li.activity {
+    margin: 3px 0;
+}
