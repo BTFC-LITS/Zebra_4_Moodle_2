@@ -56,7 +56,7 @@ $hashomeicon = ($PAGE->theme->settings->homeicon); //Check the theme settings to
 if (empty($hashomeicon)) {
     $bodyclasses[] = 'no_homeicon';
 } else {
-    $homeurl = new moodle_url('/index.php');
+    $homeurl = new moodle_url('/my/');
 }
 $hascallink = ($PAGE->theme->settings->callink); //Check the theme settings to display the calendar link
 if (empty($hascallink)) {
