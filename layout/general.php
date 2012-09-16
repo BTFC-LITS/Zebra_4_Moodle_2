@@ -50,11 +50,11 @@ require_once('header.php'); ?>
                         <div id="custommenu-wrapper" class="clearfix">
                             <div id="custommenu">
 				<?php if ($hashomeicon) {
-				    echo '<a class="home" href="' . $homeurl . '"><div>&nbsp;</div></a>';
+				    echo '<a class="home" href="' . $homeurl . '" title="My home"><div>&nbsp;</div></a>';
 				}
 				echo $custommenu;
 				if ($hascallink) {
-				    echo '<a class="calendar" href="' . $calurl . '">' . date("$dateformat") . '</a>';
+				    echo '<a class="calendar" href="' . $calurl . '" title="Calendar">' . date("$dateformat") . '</a>';
 				} ?>
 			    </div>
                         </div>
