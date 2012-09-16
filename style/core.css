@@ -186,8 +186,10 @@ table.generalbox {
     padding: 4px 0;
 }
 
-#page-footer .sitelink {
-    margin: 6px;
+#page-footer .logininfo,
+#page-footer .sitelink,
+#page-footer .helplink {
+    margin: 6px 8px;
 }
 
 #page-footer .sitelink img {
