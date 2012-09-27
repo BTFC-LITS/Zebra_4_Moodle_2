@@ -39,6 +39,7 @@ $THEME->sheets = array(
     'filemanager',  //Overrides for the filemanager sheet
     'admin',	    //Overrides for the admin sheet from Base
     'blocks',	    //Overrides for the blocks sheet from Base
+    'block_login',  //Overrides for login block
     'calendar',	    //Overrides for the calendar sheet from Base
     'course',	    //Overrides for the course sheet from Base
     'custommenu',   //Applies style to the custommenu

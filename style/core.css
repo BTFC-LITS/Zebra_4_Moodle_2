@@ -24,6 +24,20 @@
 /**
  * Required to undo YUI resets that override input size
  */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::-webkit-file-upload-button,
+button {
+    padding: 1px 6px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+isindex {
+    padding: 1px;
+}
 
 /* Fix for YUI overriding styles */
 
@@ -201,7 +215,7 @@ table.generalbox {
 }
 
 #page-footer .homelink a {
-    padding: 6px;
+    padding: 7px;
     border-radius:4px;
     -moz-border-radius:4px;
     -webkit-border-radius:4px;

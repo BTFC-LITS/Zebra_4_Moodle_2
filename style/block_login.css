@@ -1,0 +1,75 @@
+/*
+  This file is part of Moodle - http://moodle.org/
+  Moodle is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Moodle is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  You should have received a copy of the GNU General Public License
+  along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/**
+ * zebra theme blocks css file
+ *
+ * @package    theme_zebra
+ * @copyright  2011 Danny Wahl
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Login block */
+
+.block_login #cookie_info {
+    margin: 6px 0;
+}
+
+.block_login #cookie_info img {
+    vertical-align: top;
+}
+
+.block_login #sso_button {
+    margin: 12px 0;
+}
+
+.block_login #sso_button a {
+    color: [[setting:contentbgcolor]];
+    font-size: 93%;
+    padding: 7px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background-clip:padding-box;
+    -moz-background-clip:padding;
+    -webkit-background-clip:padding-box;
+    text-shadow: 0 1px 0 [[setting:fontcolor]];
+    text-decoration: none;
+    background: #B10B2E;
+    background:-moz-linear-gradient(center top, [[setting:menucolorscheme]] 0%, transparent 66%) #B10B2E;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,[[setting:menucolorscheme]]),color-stop(66%,transparent)) #B10B2E;
+    background:-webkit-linear-gradient(top, [[setting:menucolorscheme]] 0%,transparent 66%) #B10B2E;
+    background:-ms-linear-gradient(top, [[setting:menucolorscheme]] 0%,transparent 66%) #B10B2E;
+    background:linear-gradient(top, [[setting:menucolorscheme]] 0%,transparent 66%) #B10B2E;
+    -moz-box-shadow: 0 1px #B10B2E inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px #B10B2E inset;
+    -webkit-box-shadow: 0 1px #B10B2E inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px #B10B2E inset;
+    box-shadow: 0 1px #B10B2E inset, 0 2px [[setting:menucolorscheme]] inset, 0 -1px #B10B2E inset;
+}
+
+.block_login #sso_button a:hover {
+    background:-moz-linear-gradient(center top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) #D21243 !important;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,[[setting:menucolorscheme]]), color-stop(100%,rgba(0,0,0,0.3))) #D21243 !important;
+    background:-webkit-linear-gradient(top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) #D21243 !important;
+    background:-ms-linear-gradient(top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) #D21243 !important;
+    background:linear-gradient(top, [[setting:menucolorscheme]] 0%, rgba(0,0,0,0.3) 100%) #D21243 !important; /* Override Base Sheet "Core" Line 607 */
+    -moz-box-shadow: 0 1px #D21243 inset, 0 2px [[setting:menucolorscheme]] inset;
+    -webkit-box-shadow: 0 1px #D21243 inset, 0 2px [[setting:menucolorscheme]] inset;
+    box-shadow: 0 1px #D21243 inset, 0 2px [[setting:menucolorscheme]] inset;
+    background-color: #D21243;
+}
+
+.block_login #sso_intro p {
+    margin-bottom: 6px;
+}
