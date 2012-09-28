@@ -18,14 +18,14 @@
  * zebra theme config page
  *
  * @package    theme_zebra
- * @copyright  2011 Danny Wahl
+ * @copyright  2012 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2012062200;
+$plugin->version   = 2012092100;
 $plugin->component = 'theme_zebra';
-$plugin->requires  = 2011120100;
+$plugin->requires  = 2010112400;
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release = '2.2.11 (Build: 2012062200)';
+$plugin->release   = '2.3.0 (Build: 2012092100)';
