@@ -83,6 +83,10 @@
     background: url([[pix:theme|menu/cal_bg]]) repeat-x 0 0 [[setting:fontcolor]];
 }
 
+.ie .block_login #sso_button a {
+    background: url([[pix:theme|menu/sso_bg]]) repeat-x 0 0 #B10B2E;
+}
+
 .ie #custommenu .yui3-menu-label-active,
 .ie #custommenu .yui3-menu-label-menuvisible,
 .ie #custommenu .yui3-menuitem-active,
@@ -90,6 +94,10 @@
 .ie #custommenu .home:hover,
 .ie #page-footer .homelink a:hover {
     background: url([[pix:theme|menu/hover_bg]]) repeat-x 0 0 [[setting:hovercolor]];
+}
+
+.ie .block_login #sso_button a:hover {
+    background: url([[pix:theme|menu/sso_hov_bg]]) repeat-x 0 0 #D21243;
 }
 
 .ie9 #custommenu-wrapper,
@@ -102,6 +110,11 @@
 .opera #custommenu .calendar,
 .opera #page-footer .homelink a {
     background: url([[pix:theme|menu/cal_bg_no_hl]]) repeat-x 0 2px [[setting:fontcolor]];
+}
+
+.ie9 .block_login #sso_button a,
+.opera .block_login #sso_button a {
+    background: url([[pix:theme|menu/sso_bg_no_hl]]) repeat-x 0 2px #B10B2E;
 }
 
 .ie9 #custommenu .yui3-menu-label-active,
@@ -117,6 +130,11 @@
 .opera #custommenu .home:hover,
 .opera #page-footer .homelink a:hover {
     background: url([[pix:theme|menu/hover_bg_no_hl]]) repeat-x 0 2px [[setting:hovercolor]];
+}
+
+.ie9 .block_login #sso_button a:hover,
+.opera .block_login #sso_button a:hover {
+    background: url([[pix:theme|menu/sso_hov_bg_no_hl]]) repeat-x 0 2px #D21243;
 }
 
 .ie .yui3-menu-content {

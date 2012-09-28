@@ -215,6 +215,7 @@ table.generalbox {
 }
 
 #page-footer .homelink a {
+    line-height: 28px;
     padding: 7px;
     border-radius:4px;
     -moz-border-radius:4px;

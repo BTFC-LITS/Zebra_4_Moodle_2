@@ -24,7 +24,7 @@
 /* Login block */
 
 .block_login #cookie_info {
-    margin: 6px 0;
+    margin: 3px 0;
 }
 
 .block_login #cookie_info img {
@@ -32,12 +32,13 @@
 }
 
 .block_login #sso_button {
-    margin: 12px 0;
+    margin: 6px 0;
 }
 
 .block_login #sso_button a {
     color: [[setting:contentbgcolor]];
     font-size: 93%;
+    line-height: 28px;
     padding: 7px;
     border-radius:4px;
     -moz-border-radius:4px;
@@ -70,6 +71,16 @@
     background-color: #D21243;
 }
 
+.block_login #sso_intro {
+    border: 1px solid [[setting:bordercolor]];
+    margin: 3px 0;
+}
+
 .block_login #sso_intro p {
-    margin-bottom: 6px;
+    font-size: 93%;
+    margin: 3px;
+}
+
+.block_login .loginform .c1 {
+    margin: 3px 0;
 }
