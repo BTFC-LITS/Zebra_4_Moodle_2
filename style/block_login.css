@@ -32,7 +32,8 @@
 }
 
 .block_login #sso_button {
-    margin: 6px 0;
+    margin: 6px 0 8px;
+    text-align: center;
 }
 
 .block_login #sso_button a {
@@ -73,12 +74,17 @@
 
 .block_login #sso_intro {
     border: 1px solid [[setting:bordercolor]];
+    background: #EEE;
     margin: 3px 0;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
 }
 
 .block_login #sso_intro p {
     font-size: 93%;
-    margin: 3px;
+    margin: 6px;
+    text-shadow: 0 1px 0 #FFF;
 }
 
 .block_login .loginform .c1 {
