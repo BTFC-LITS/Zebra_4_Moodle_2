@@ -14,34 +14,23 @@
 */
 
 /**
- * zebra extras css file
+ * zebra theme modules css file
  *
  * @package    theme_zebra
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/* Branding */
+/* Folder */
 
-#branding {
-	margin-top: 10px;
+.path-mod-folder .mod_introbox {
+    border-color: [[setting:bodybgcolor]];
 }
 
-#branding img {
-	padding: 0 10px;
+.path-mod-folder .foldertree {
+    border: 0 none;
 }
 
-/**
- * autohide CSS
- * This adds the special autohide css in lib.php if the setting is enabled.
- */
-
-[[setting:useautohide]]
-
-/**
- * Custom CSS
- * This is the very last piece of CSS loaded, so if something looks weird,
- * try removing your custom CSS from the theme settings page.
- */
-
-[[setting:customcss]]
+.path-mod-folder .ygtvspacer {
+    text-decoration: none!important;
+}

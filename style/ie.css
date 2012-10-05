@@ -56,11 +56,6 @@
     background-image: url([[pix:theme|core/yui2-treeview-sprite-rtl]]);
 }
 
-.ie .headermain,
-.opera .headermain {
-    background: [[setting:columnbgcolor]];
-}
-
 .ie7 .breadcrumb .arrow {
     margin-left: 4px;
 }
