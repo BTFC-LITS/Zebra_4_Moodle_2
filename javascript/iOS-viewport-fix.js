@@ -16,9 +16,9 @@
  */
 
 /**
- * zebra theme iOS viewport fix JavaScript file
+ * blearning theme iOS viewport fix JavaScript file
  *
- * @package    theme_zebra
+ * @package    theme_blearning
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

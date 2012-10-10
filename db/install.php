@@ -15,57 +15,57 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * zebra theme install functions
+ * blearning theme install functions
  *
- * @package    theme_zebra
+ * @package    theme_blearning
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
  
-function xmldb_theme_zebra_install() {
-    $currentsetting = get_config('theme_zebra');
+function xmldb_theme_blearning_install() {
+    $currentsetting = get_config('theme_blearning');
  
     // Create linkcolor
-    set_config('linkcolor', $currentsetting->firstcolor, 'theme_zebra');
+    set_config('linkcolor', $currentsetting->firstcolor, 'theme_blearning');
     // Remove firstcolor
-    unset_config('firstcolor', 'theme_zebra');
+    unset_config('firstcolor', 'theme_blearning');
   
     // Create hovercolor
-    set_config('hovercolor', $currentsetting->secondcolor, 'theme_zebra');
+    set_config('hovercolor', $currentsetting->secondcolor, 'theme_blearning');
     // Remove secondcolor
-    unset_config('secondcolor', 'theme_zebra');
+    unset_config('secondcolor', 'theme_blearning');
   
     // Create fontcolor
-    set_config('fontcolor', $currentsetting->thirdcolor, 'theme_zebra');
+    set_config('fontcolor', $currentsetting->thirdcolor, 'theme_blearning');
     // Remove thirdcolor
-    unset_config('third', 'theme_zebra');
+    unset_config('third', 'theme_blearning');
   
     // Create contentbgcolor
-    set_config('hovercolor', $currentsetting->fourthcolor, 'theme_zebra');
+    set_config('hovercolor', $currentsetting->fourthcolor, 'theme_blearning');
     // Remove fourthcolor
-    unset_config('fourthcolor', 'theme_zebra');
+    unset_config('fourthcolor', 'theme_blearning');
   
     // Create columnbgcolor
-    set_config('columnbgcolor', $currentsetting->fifthcolor, 'theme_zebra');
+    set_config('columnbgcolor', $currentsetting->fifthcolor, 'theme_blearning');
     // Remove fifthcolor
-    unset_config('fifthcolor', 'theme_zebra');
+    unset_config('fifthcolor', 'theme_blearning');
   
     // Create headerbgcolor
-    set_config('headerbgcolor', $currentsetting->sixthcolor, 'theme_zebra');
+    set_config('headerbgcolor', $currentsetting->sixthcolor, 'theme_blearning');
     // Remove sixthcolor
-    unset_config('sixthcolor', 'theme_zebra');
+    unset_config('sixthcolor', 'theme_blearning');
   
     // Create footerbgcolor
-    set_config('footerbgcolor', $currentsetting->seventhcolor, 'theme_zebra');
+    set_config('footerbgcolor', $currentsetting->seventhcolor, 'theme_blearning');
     // Remove seventhcolor
-    unset_config('seventhcolor', 'theme_zebra');
+    unset_config('seventhcolor', 'theme_blearning');
 
     // Create bordercolor
-    set_config('bordercolor', $currentsetting->eighthcolor, 'theme_zebra');
+    set_config('bordercolor', $currentsetting->eighthcolor, 'theme_blearning');
     // Remove eighthcolor
-    unset_config('eighthcolor', 'theme_zebra');
+    unset_config('eighthcolor', 'theme_blearning');
     
     return true;
 }

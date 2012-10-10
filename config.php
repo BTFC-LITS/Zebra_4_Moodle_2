@@ -15,14 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * zebra theme config page
+ * blearning theme config page
  *
- * @package    theme_zebra
+ * @package    theme_blearning
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$THEME->name = 'zebra';
+$THEME->name = 'blearning';
 
 $THEME->parents = array('base');
 
@@ -152,7 +152,7 @@ $THEME->layouts = array(
 
 $THEME->enable_dock = true;
 
-$THEME->csspostprocess = 'zebra_process_css'; //Process the settings page (colors, widths, etc.)
+$THEME->csspostprocess = 'blearning_process_css'; //Process the settings page (colors, widths, etc.)
 
 $THEME->javascripts = array();
 $THEME->javascripts_footer = array();

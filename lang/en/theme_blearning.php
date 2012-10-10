@@ -15,31 +15,31 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * zebra theme English language strings
+ * blearning theme English language strings
  *
- * @package    theme_zebra
+ * @package    theme_blearning
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Zebra';
+$string['pluginname'] = 'bLearning';
 $string['choosereadme'] = '<div class="clearfix">
-	<h1>Zebra</h1>
+	<h1>bLearning</h1>
         <hr>
 	<div style="float:right;margin-left:4px;">
-		<img src="zebra/pix/screenshot.jpg" />
+		<img src="blearning/pix/screenshot.jpg" />
 	</div>
 	<div>
-	    <p><span class="warning">Warning:</span> Zebra 2.0+ relies heavily on CSS3 and is <u>NOT recommended</u> for IE6 or below, but then, neither is Moodle 2.0+.</p>
+	    <p><span class="warning">Warning:</span> bLearning 2.0+ relies heavily on CSS3 and is <u>NOT recommended</u> for IE6 or below, but then, neither is Moodle 2.0+.</p>
 	    <br />
 		<h2>About</h2>
-		<p>Zebra uses CSS3 <code>@media</code> queries to dynamically reflow the page layout based on screen width.  This custom 2-1-3 (middle, left, right) page layout can display 1, 2, or 3 columns depending on screen width.  It is also compatible with <code>.side-pre-only</code>, <code>.side-post-only</code>, and <code>.content-only</code> body classes in all 3 layouts.</p>
+		<p>bLearning uses CSS3 <code>@media</code> queries to dynamically reflow the page layout based on screen width.  This custom 2-1-3 (middle, left, right) page layout can display 1, 2, or 3 columns depending on screen width.  It is also compatible with <code>.side-pre-only</code>, <code>.side-post-only</code>, and <code>.content-only</code> body classes in all 3 layouts.</p>
         <br />
-        <p>Zebra also provides extensive customization via its settings page, including colors, logos, reflow settings, mobile settings, and a custom CSS field.</p>
+        <p>bLearning also provides extensive customization via its settings page, including colors, logos, reflow settings, mobile settings, and a custom CSS field.</p>
 		<h2>Parents</h2>
 		<p>This theme is built upon Base and integrates the pagelayout and dock from Rebase.</p>
 		<h2>Credits</h2>
-		<p>Zebra 2.0 is based off of the original Aardvark 1.2 (1.9) by Shaun Daubney @ Newbury-College, Zebra 1.4 (1.9) by me (Danny Wahl) @ iyWare, Aardvark_makeover (2.0) by Mary Evans @ Visible-Expressions, and whatever themes those themes are based off of.</p>
+		<p>bLearning 2.0 is based off of the original Aardvark 1.2 (1.9) by Shaun Daubney @ Newbury-College, bLearning 1.4 (1.9) by me (Danny Wahl) @ iyWare, Aardvark_makeover (2.0) by Mary Evans @ Visible-Expressions, and whatever themes those themes are based off of.</p>
 		<h2>License</h2>
 		<p>This, and all other themes included in the Moodle core, are licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.</p>
 		<br />
@@ -47,11 +47,11 @@ $string['choosereadme'] = '<div class="clearfix">
 		<h2>Theme Discussion Forum:</h2>
 		<p><a href="http://moodle.org/mod/forum/discuss.php?d=211918">http://moodle.org/mod/forum/discuss.php?d=211918</a></p>
 		<h2>Theme Plugin URL:</h2>
-                <p><a href="http://moodle.org/plugins/view.php?plugin=theme_zebra">http://moodle.org/plugins/view.php?plugin=theme_zebra</a></p>
+                <p><a href="http://moodle.org/plugins/view.php?plugin=theme_blearning">http://moodle.org/plugins/view.php?plugin=theme_blearning</a></p>
                 <h2>Theme Credits</h2>
 		<p><a href="http://iyware.com">Danny Wahl</a></p>
                 <h2>Don\'t forget to customize your settings!</h2>
-                <a href="../admin/settings.php?section=themesettingzebra">Zebra Theme Settings</a>
+                <a href="../admin/settings.php?section=themesettingblearning">bLearning Theme Settings</a>
 	</div>
 </div>
 ';
@@ -66,7 +66,7 @@ $string['headerinfo'] = 'Header settings';
 $string['headerinfodesc'] = '<p>Change the settings for the header region.</p>';
 
 $string['logourl'] = 'Logo URL';
-$string['logourldesc'] = '<p>Input the URL to your logo.</p><p>This can be used in one of three protocol types:<ul><li><p>Moodle Output (relative to theme):</p><p><code>logo/companylogo</code></p></li><li><p>Full path:</p><p><code>http://domain.com/theme/image.php?theme=zebra&image=logo&rev=1&component=theme</code><br /><code>http://domain.com/path/to/image.jpg</code></p></li><li><p>Relative Path:</p><p><code>/path/to/file/companylogo.png</code></p></li></ul></p>';
+$string['logourldesc'] = '<p>Input the URL to your logo.</p><p>This can be used in one of three protocol types:<ul><li><p>Moodle Output (relative to theme):</p><p><code>logo/companylogo</code></p></li><li><p>Full path:</p><p><code>http://domain.com/theme/image.php?theme=blearning&image=logo&rev=1&component=theme</code><br /><code>http://domain.com/path/to/image.jpg</code></p></li><li><p>Relative Path:</p><p><code>/path/to/file/companylogo.png</code></p></li></ul></p>';
 $string['backgroundurl'] = 'Background URL';
 $string['backgroundurldesc'] = '<p>Input the URL to your body background image.</p><p>This can be used in Moodle Output format (relative to theme), full path, or relative path.</p>';
 
@@ -136,7 +136,7 @@ $string['menucolorscheme'] = 'Menu color scheme';
 $string['menucolorschemedesc'] = '<p>Gradient of menu.</p>';
 
 $string['columninfo'] = 'Layout Settings';
-$string['columninfodesc'] = '<p>Change the settings for the layout of the page.  To test your settings simply resize your browser window or rotate the orientation of your phone/tablet.</p><figure style="float: left;"><img src="../theme/image.php?theme=zebra&image=core/one_column&component=theme"/><figcaption><ul><li>top: <code>region-main</code></li><li>middle: <code>region-pre</code></li><li>bottom: <code>region-post</code></li></ul></figcaption></figure><figure style="float: left;"><img src="../theme/image.php?theme=zebra&image=core/two_columns&component=theme"/><figcaption><ul><li>top left: <code>region-pre</code></li><li>bottom left: <code>region-post</code></li><li>right: <code>region-main</code></li></ul></figcaption></figure><figure style="float: left;"><img src="../theme/image.php?theme=zebra&image=core/three_columns&component=theme"/><figcaption><ul><li>left: <code>region-pre</code></li><li>center: <code>region-main</code></li><li>right: <code>region-post</code></li></ul></figcaption></figure><br style="clear: left;" />';
+$string['columninfodesc'] = '<p>Change the settings for the layout of the page.  To test your settings simply resize your browser window or rotate the orientation of your phone/tablet.</p><figure style="float: left;"><img src="../theme/image.php?theme=blearning&image=core/one_column&component=theme"/><figcaption><ul><li>top: <code>region-main</code></li><li>middle: <code>region-pre</code></li><li>bottom: <code>region-post</code></li></ul></figcaption></figure><figure style="float: left;"><img src="../theme/image.php?theme=blearning&image=core/two_columns&component=theme"/><figcaption><ul><li>top left: <code>region-pre</code></li><li>bottom left: <code>region-post</code></li><li>right: <code>region-main</code></li></ul></figcaption></figure><figure style="float: left;"><img src="../theme/image.php?theme=blearning&image=core/three_columns&component=theme"/><figcaption><ul><li>left: <code>region-pre</code></li><li>center: <code>region-main</code></li><li>right: <code>region-post</code></li></ul></figcaption></figure><br style="clear: left;" />';
 
 $string['twocolmin'] = 'Two column min width';
 $string['twocolmindesc'] = '<p>Min width for two column layout.</p>';
