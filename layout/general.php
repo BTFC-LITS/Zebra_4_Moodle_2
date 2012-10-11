@@ -36,6 +36,9 @@ require_once('header.php'); ?>
                             echo '</a>';
                     	} ?>
                     </div>
+                    <div id="dept-branding">
+                        <?php echo '<img src="'.$OUTPUT->pix_url('logo/dept_logo', 'theme').'" class="dept-logo" alt="bLearning logo" />'; ?>
+                    </div>
                     <div id="profileblock">
 						<?php if (($haslogininfo) && (isloggedin()) && ($showuserpic)) {
 					        echo html_writer::tag('div', $OUTPUT->user_picture($USER, array('size'=>80)), array('id'=>'user-pic'));
