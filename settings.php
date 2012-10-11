@@ -43,7 +43,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/logourl';
     $title = get_string('logourl','theme_blearning');
     $description = get_string('logourldesc', 'theme_blearning');
-    $default = 'logo/logo';
+    $default = 'logo/logos';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_URL);
     $settings->add($setting);
 
@@ -59,7 +59,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/backgroundurl';
     $title = get_string('backgroundurl', 'theme_blearning');
     $description = get_string('backgroundurldesc', 'theme_blearning');
-    $default = 'core/background';
+    $default = 'core/body';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_URL);
     $settings->add($setting);
 
@@ -83,7 +83,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/dateformat';
     $title = get_string('dateformat', 'theme_blearning');
     $description = get_string('dateformatdesc', 'theme_blearning');
-    $default = 'F j, Y';
+    $default = 'D jS M Y';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 10);
     $settings->add($setting);
 
@@ -106,7 +106,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/bodybgcolor';
     $title = get_string('bodybgcolor','theme_blearning');
     $description = get_string('bodybgcolordesc', 'theme_blearning');
-    $default = '#DDD';
+    $default = '#090103';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 10);
     $settings->add($setting);
 
@@ -130,7 +130,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/fontcolor';
     $title = get_string('fontcolor','theme_blearning');
     $description = get_string('fontcolordesc', 'theme_blearning');
-    $default = '#2F2F2F';
+    $default = '#393939';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 10);
     $settings->add($setting);
 
@@ -162,7 +162,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/footerbgcolor';
     $title = get_string('footerbgcolor','theme_blearning');
     $description = get_string('footerbgcolordesc', 'theme_blearning');
-    $default = '#DDD';
+    $default = 'transparent';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 10);
     $settings->add($setting);
 
@@ -170,7 +170,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/bordercolor';
     $title = get_string('bordercolor','theme_blearning');
     $description = get_string('bordercolordesc', 'theme_blearning');
-    $default = '#CCC';
+    $default = '#DDD';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 10);
     $settings->add($setting);
 
@@ -264,7 +264,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/colorscheme';
     $title = get_string('colorscheme','theme_blearning');
     $description = get_string('colorschemedesc', 'theme_blearning');
-    $default = 'none';
+    $default = 'dark';
     $choices = array('none'=>'None', 'dark'=>'Dark', 'light'=>'Light');
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $settings->add($setting);
@@ -273,7 +273,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/menucolorscheme';
     $title = get_string('menucolorscheme','theme_blearning');
     $description = get_string('menucolorschemedesc', 'theme_blearning');
-    $default = 'none';
+    $default = 'light';
     $choices = array('none'=>'None', 'dark'=>'Dark', 'light'=>'Light');
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $settings->add($setting);
@@ -289,7 +289,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/twocolmin';
     $title = get_string('twocolmin','theme_blearning');
     $description = get_string('twocolmindesc', 'theme_blearning');
-    $default = '481px';
+    $default = '601px';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 5);
     $settings->add($setting);
 
@@ -297,7 +297,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/threecolmin';
     $title = get_string('threecolmin','theme_blearning');
     $description = get_string('threecolmindesc', 'theme_blearning');
-    $default = '769px';
+    $default = '801px';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 5);
     $settings->add($setting);
 
@@ -305,7 +305,7 @@ if ($ADMIN->fulltree) {
     $name = 'theme_blearning/pagemaxwidth';
     $title = get_string('pagemaxwidth','theme_blearning');
     $description = get_string('pagemaxwidthdesc', 'theme_blearning');
-    $default = '100%';
+    $default = '1200px';
     $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_CLEAN, 5);
     $settings->add($setting);
 
@@ -337,7 +337,7 @@ if ($ADMIN->fulltree) {
     $visiblename = get_string('userespond', 'theme_blearning');
     $title = get_string('userespond', 'theme_blearning');
     $description = get_string('useresponddesc', 'theme_blearning');
-    $setting = new admin_setting_configcheckbox($name, $visiblename, $description, 0);
+    $setting = new admin_setting_configcheckbox($name, $visiblename, $description, 1);
     $settings->add($setting);
 
     //Enable prompt of Google Chrome Frame
@@ -345,14 +345,14 @@ if ($ADMIN->fulltree) {
     $visiblename = get_string('usecf', 'theme_blearning');
     $title = get_string('usecf', 'theme_blearning');
     $description = get_string('usecfdesc', 'theme_blearning');
-    $setting = new admin_setting_configcheckbox($name, $visiblename, $description, 0);
+    $setting = new admin_setting_configcheckbox($name, $visiblename, $description, 1);
     $settings->add($setting);
 
     //Set maximum version for Chrome Frome prompt
     $name = 'theme_blearning/cfmaxversion';
     $title = get_string('cfmaxversion','theme_blearning');
     $description = get_string('cfmaxversiondesc', 'theme_blearning');
-    $default = '6';
+    $default = 'ie6';
     $choices = array('ie6'=>'6', 'ie7'=>'7', 'ie8'=>'8');
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $settings->add($setting);
@@ -384,6 +384,6 @@ if ($ADMIN->fulltree) {
     $visiblename = get_string('branding', 'theme_blearning');
     $title = get_string('branding', 'theme_blearning');
     $description = get_string('brandingdesc', 'theme_blearning');
-    $setting = new admin_setting_configcheckbox($name, $visiblename, $description, 0);
+    $setting = new admin_setting_configcheckbox($name, $visiblename, $description, 1);
     $settings->add($setting);
 }

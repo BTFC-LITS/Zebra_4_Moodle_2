@@ -101,7 +101,7 @@ $string['columnbgcolordesc'] = '<p>Column(s) background color.</p><p>This is app
 $string['headerbgcolor'] = 'Header background color';
 $string['headerbgcolordesc'] = '<p>Header background color.</p>';
 $string['footerbgcolor'] = 'Footer background color';
-$string['footerbgcolordesc'] = '<p>Footer background color.</p><p>Using <code>transparent</code> will cause the footer to display the value of <code>contentbgcolor</code> not <code>bodybgcolor</code>.  This should be set to the same value as <code>bodybgcolor</code> for a transparent effect.</p>';
+$string['footerbgcolordesc'] = '<p>Footer background color.</p>';
 $string['bordercolor'] = 'Border color';
 $string['bordercolordesc'] = '<p>Color for the borders around page elements.</p>';
 
