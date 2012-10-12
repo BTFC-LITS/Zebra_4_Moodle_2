@@ -32,22 +32,24 @@ require_once('header.php'); ?>
                     <div class="headermain">
                     	<?php if($haslogo) {
                             echo '<a href="'.$CFG->wwwroot.'/my/" title="My home">';
-                    	    echo '<img src="'.$OUTPUT->pix_url($PAGE->theme->settings->logourl, 'theme').'" class="logo" alt="Logo" />';
+                    	    echo $logo;
                             echo '</a>';
                     	} ?>
                     </div>
-                    <div id="profileblock">
-						<?php if (($haslogininfo) && (isloggedin()) && ($showuserpic)) {
-					        echo html_writer::tag('div', $OUTPUT->user_picture($USER, array('size'=>80)), array('id'=>'user-pic'));
-						} ?>
-						<div id="user-info">
-							<?php echo $OUTPUT->login_info();
-							if ($haslangmenu) {
-								echo $OUTPUT->lang_menu();
-							}
-							echo $PAGE->headingmenu; ?>
-						</div>
-                    </div>
+                    <?php if (!$simplelogin) { ?>
+	                    <div id="profileblock">
+							<?php if (($haslogininfo) && (isloggedin()) && ($showuserpic)) {
+						        echo html_writer::tag('div', $OUTPUT->user_picture($USER, array('size'=>80)), array('id'=>'user-pic'));
+							} ?>
+							<div id="user-info">
+								<?php echo $OUTPUT->login_info();
+								if ($haslangmenu) {
+									echo $OUTPUT->lang_menu();
+								}
+								echo $PAGE->headingmenu; ?>
+							</div>
+	                    </div>
+                    <?php } ?>
                 </div>
                 <div id="page-border-wrapper">
                     <?php if ($hascustommenu) { ?>
@@ -62,8 +64,10 @@ require_once('header.php'); ?>
 				} ?>
 			    </div>
                         </div>
+                    <?php }
+                    if (!$simplelogin) { ?>
+                    	<h1 class="header"><?php echo $headeralt; ?></h1>
                     <?php } ?>
-                    <h1 class="header"><?php echo $headeralt; ?></h1>
                     <?php if ($hasnavbar) { ?>
                         <div id="navbar-wrapper">
                             <div class="navbar clearfix">
