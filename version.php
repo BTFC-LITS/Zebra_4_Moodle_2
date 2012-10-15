@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * zebra theme config page
+ * zebra_tab theme config page
  *
- * @package    theme_zebra
+ * @package    theme_zebra_tab
  * @copyright  2012 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->version   = 2012100800;
-$plugin->component = 'theme_zebra';
+$plugin->component = 'theme_zebra_tab';
 $plugin->requires  = 2010112400;
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->release   = '2.3.2 (Build: 2012100800)';

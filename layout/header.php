@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * zebra theme header
+ * zebra_tab theme header
  *
- * @package    theme_zebra
+ * @package    theme_zebra_tab
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -76,7 +76,7 @@ if (!empty($PAGE->theme->settings->headeralt)) {
 }
 $haslogo = (!empty($PAGE->theme->settings->logourl)); //Check if a logo is selected
 if ($haslogo) { //Pass the raw variable to the function to render with pix_url if necessary
-    $logourl = zebra_print_logourl($PAGE->theme->settings->logourl);
+    $logourl = zebra_tab_print_logourl($PAGE->theme->settings->logourl);
     $logo = html_writer::empty_tag('img', array('src'=>$logourl, 'class'=>'logo', 'alt'=>'Logo'));
 }
 $showbranding = ($PAGE->theme->settings->branding); //Check the theme settings to see if footer logos are displayed

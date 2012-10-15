@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * zebra theme footer
+ * zebra_tab theme footer
  *
- * @package    theme_zebra
+ * @package    theme_zebra_tab
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -53,10 +53,10 @@
 	</script>
     <?php }
     if ($requiresrespond) {
-	$PAGE->requires->js('/theme/zebra/javascript/respond.js');
+	$PAGE->requires->js('/theme/zebra_tab/javascript/respond.js');
     }
     if ($usingios) { //Check if the user is using iOS and serve a JS to fix a viewport re-flow bug
-	$PAGE->requires->js('/theme/zebra/javascript/iOS-viewport-fix.js');
+	$PAGE->requires->js('/theme/zebra_tab/javascript/iOS-viewport-fix.js');
     }
     echo $OUTPUT->standard_end_of_body_html(); ?>
 </body>

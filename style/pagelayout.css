@@ -14,9 +14,9 @@
 */
 
 /**
- * zebra theme page layout css file
+ * zebra_tab theme page layout css file
  *
- * @package    theme_zebra
+ * @package    theme_zebra_tab
  * @copyright  2011 Danny Wahl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -25,17 +25,13 @@
 
 html {
     height: 100%; /* Prevent pages with small content from cutting off background image: doesn't work until a body tag has a height too */
-    background: url([[setting:backgroundurl]]) no-repeat fixed center top [[setting:bodybgcolor]];
+    background: url([[setting:backgroundurl]]) repeat-x scroll left top [[setting:bodybgcolor]];
     color: [[setting:fontcolor]];
 }
 
 body {
     padding: 0 10px 10px 10px;
-    background: url([[setting:backgroundurl]]) no-repeat fixed center top transparent;
-}
-
-body.android, body.ios {
-    background: [[setting:bodybgcolor]];
+    background: url([[setting:backgroundurl]]) repeat-x scroll left top transparent;
 }
 
 hr {
