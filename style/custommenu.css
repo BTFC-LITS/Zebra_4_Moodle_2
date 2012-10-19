@@ -128,6 +128,7 @@
 #custommenu .yui3-menu-label,
 #custommenu .yui3-menu .yui3-menu .yui3-menu-label {
     background-image: url([[setting:vmenuiconcolor]]);
+    padding-right: 10px; /* Override MDL-34957 fix in Base Sheet "Core" */
 }
 
 #custommenu .custom_menu_submenu .yui3-menuitem-active,
