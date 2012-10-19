@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * zebra theme general page layout
+ * zebra theme report page layout
  *
  * @package    theme_zebra
  * @copyright  2011 Danny Wahl
@@ -55,14 +55,14 @@ require_once('header.php'); ?>
                     <?php if ($hascustommenu) { ?>
                         <div id="custommenu-wrapper" class="clearfix">
                             <div id="custommenu">
-				<?php if ($hashomeicon) {
-				    echo '<a class="home" href="' . $homeurl . '" title="My home"><div>&nbsp;</div></a>';
-				}
-				echo $custommenu;
-				if ($hascallink) {
-				    echo '<a class="calendar" href="' . $calurl . '" title="Calendar">' . date("$dateformat") . '</a>';
-				} ?>
-			    </div>
+	                            <?php if ($hashomeicon) {
+		                            echo '<a class="home" href="' . $homeurl . '" title="My home"><div>&nbsp;</div></a>';
+		                        }
+		                        echo $custommenu;
+		                        if ($hascallink) {
+			                        echo '<a class="calendar" href="' . $calurl . '" title="Calendar">' . date("$dateformat") . '</a>';
+			                    } ?>
+			    			</div>
                         </div>
                     <?php }
                     if (!$simplelogin) { ?>
