@@ -265,7 +265,7 @@ if ($ADMIN->fulltree) {
     $title = get_string('colorscheme','theme_blearning');
     $description = get_string('colorschemedesc', 'theme_blearning');
     $default = 'dark';
-    $choices = array('none'=>'None', 'dark'=>'Dark', 'light'=>'Light');
+    $choices = array('none'=>get_string('schemenone', 'theme_blearning'), 'dark'=>get_string('schemedark', 'theme_blearning'), 'light'=>get_string('schemelight', 'theme_blearning'));
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $settings->add($setting);
 
@@ -274,7 +274,7 @@ if ($ADMIN->fulltree) {
     $title = get_string('menucolorscheme','theme_blearning');
     $description = get_string('menucolorschemedesc', 'theme_blearning');
     $default = 'light';
-    $choices = array('none'=>'None', 'dark'=>'Dark', 'light'=>'Light');
+    $choices = array('none'=>get_string('schemenone', 'theme_blearning'), 'dark'=>get_string('schemedark', 'theme_blearning'), 'light'=>get_string('schemelight', 'theme_blearning'));
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $settings->add($setting);
 
