@@ -71,12 +71,20 @@
     padding-bottom: 0;
 }
 
-.forumpost.unread .header {
+.forumpost.unread .row.header {
     border-color: [[setting:hovercolor]];
+    border-bottom-width: 3px;
 }
 
+#page-mod-forum-view .unread,
+.forumpost.unread .row.header,
 span.unread {
-    background-color: [[setting:hovercolor]];
+    background-color: [[setting:linkcolor]];
+}
+
+.path-course-view .unread
+{
+    background-color: transparent;
 }
 
 .forumpost .header .subject {
