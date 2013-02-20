@@ -99,6 +99,7 @@ a:active {
 h1.header,
 .sitetopic,
 .coursebox,
+.generalbox,
 .course-content li.section,
 .block,
 #dockeditempanel {
@@ -154,16 +155,6 @@ h1.header,
     padding: 6px 6px 0 6px;
 }
 
-#region-main {
-    background:-moz-linear-gradient(center top, [[setting:colorscheme]] 0%, transparent 15px) [[setting:contentbgcolor]];
-    background:-webkit-linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:contentbgcolor]];
-    background:-ms-linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:contentbgcolor]];
-    background:linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:contentbgcolor]];
-    -moz-box-shadow:0 1px 0 [[setting:contentbgcolor]] inset;
-    -webkit-box-shadow:0 1px 0 [[setting:contentbgcolor]] inset;
-    box-shadow:0 1px 0 [[setting:contentbgcolor]] inset;
-}
-
 #region-main .region-content {
     padding: 6px;
 }
@@ -213,17 +204,6 @@ h1.header,
     	width: [[setting:colwidth]];
     }
 
-    #region-pre,
-    .side-post-only #region-post {
-        background:-moz-linear-gradient(center top, [[setting:colorscheme]] 0%, transparent 15px) [[setting:columnbgcolor]];
-        background:-webkit-linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:columnbgcolor]];
-        background:-ms-linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:columnbgcolor]];
-        background:linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:columnbgcolor]];
-        -moz-box-shadow:0 1px 0 [[setting:columnbgcolor]] inset;
-        -webkit-box-shadow:0 1px 0 [[setting:columnbgcolor]] inset;
-        box-shadow:0 1px 0 [[setting:columnbgcolor]] inset;
-    }
-
     #region-post {
     	clear: left;
     	float: left;
@@ -257,13 +237,6 @@ h1.header,
     #region-post {
         clear: none;
         margin-left: 0;
-        background:-moz-linear-gradient(center top, [[setting:colorscheme]] 0%, transparent 15px) [[setting:columnbgcolor]];
-        background:-webkit-linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:columnbgcolor]];
-        background:-ms-linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:columnbgcolor]];
-        background:linear-gradient(top, [[setting:colorscheme]] 0%,transparent 15px) [[setting:columnbgcolor]];
-        -moz-box-shadow:0 1px 0 [[setting:columnbgcolor]] inset;
-        -webkit-box-shadow:0 1px 0 [[setting:columnbgcolor]] inset;
-        box-shadow:0 1px 0 [[setting:columnbgcolor]] inset;
     }
 
     #region-post .region-content {
