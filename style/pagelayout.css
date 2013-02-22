@@ -125,6 +125,10 @@ h1.header,
     background-color: [[setting:columnbgcolor]];
 }
 
+#page-content-wrapper {
+    border-top: 1px solid #FFF;
+}
+
 #page-content-wrapper, #page-content {
     background-color: [[setting:contentbgcolor]];
     padding-bottom: 4px;
