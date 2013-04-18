@@ -47,6 +47,7 @@ $THEME->sheets = array(
     'grade',
     'mod_forum',    //Overrides for forum
     'mod_page',     //Overrides for page
+    'mod_questionnaire',    //Overrides for questionnaire
     'mod_resource', //Overrides for resources
     'extra',        //Extra stuff that doesn't fit the above
     'ie'            //Special Internet Explorer rules
