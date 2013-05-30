@@ -217,6 +217,7 @@ h1.header {
 
 #navbar-wrapper {
     background-color: [[setting:contentbgcolor]];
+    border-top: 1px solid #FFF;
     border-bottom: 1px solid [[setting:bordercolor]];
     padding: 0 2px;
 }
