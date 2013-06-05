@@ -114,7 +114,7 @@ isindex {
 
 .generalbox {
     margin-bottom: 4px;
-    padding: 2px;
+    padding: 6px;
     border: 1px solid [[setting:bordercolor]];
     border-radius: 4px;
     -moz-border-radius: 4px;
