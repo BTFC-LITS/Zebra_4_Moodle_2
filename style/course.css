@@ -82,44 +82,6 @@
     background: none;
 }
 
-
-.sitetopic .section .activity .activityinstance,
-.course-content .section .activity .activityinstance {
-    padding-right: 0; /* don't need to pad unless you're editing (makes labels look funny) */
-    line-height: 30px; /* 24px image + padding. SHould be 32, but 30 looks better */
-}
-
-/* Move progress to the left */
-
-.path-course-view .completionprogress {
-    text-align: left;
-    margin: 4px 0 4px 0;
-}
-
-
-.path-course-view li.activity span.autocompletion,
-.path-course-view li.activity form.togglecompletion {
-    right: auto;
-    left: -1em;
-    top: 4px;
-}
-
-/* Adjust hover to fill the completion too */
-
-.site-topic ul.section,
-.course-content ul.section {
-    margin: 0 -40px; /* full-width */
-}
-
-.sitetopic .section li.activity,
-.course-content .section li.activity {
-    margin: 0;
-    padding: 0 0 0 40px; /* bottom +1 to account for -1 margin */ 
-    border-top: 1px solid [[setting:bordercolor]]; /* border between all activities */
-    margin-top: -1px; /* For sections with only 1 item */
-    min-height: 32px; /* make sure everything looks even */
-}
-
 .sitetopic .section li.activity:after,
 .course-content .section li.activity:after { /* fake a clearfix */
     clear: both;
@@ -133,18 +95,6 @@
 .sitetopic .no-overflow,
 .course-content .section .no-overflow {
     padding-bottom: 0;
-}
-
-.sitetopic .section .activity:hover,
-.course-content .section .activity:hover {
-    background: transparent; /* no hover color b/c we're striping instead */
-}
-
-.sitetopic .section li.activity:nth-child(odd),
-.course-content .section li.activity:nth-child(odd),
-.sitetopic .section li.activity:nth-child(2n+1):hover,
-.course-content .section li.activity:nth-child(2n+1):hover {
-    background: [[setting:colorscheme]];
 }
 
 /* Availability info and content after link */
@@ -161,11 +111,11 @@
 
 .editing_hide + .editing_assign,
 .editing_show + .editing_assign {
-    margin-left: 22px; /* no editing_groups button */
+    margin-left: 20px; /* no editing_groups button */
 }
 
 .editing_title + .editing_moveright {
-    margin-left: 22px; /* no editing_moveleft */
+    margin-left: 20px; /* no editing_moveleft */
 }
 
 /* middle align icons */
@@ -207,16 +157,8 @@
     float: left; /* TODO: replace this w/ margin-right */
 }
 
-.editing .sitetopic .section .activity .commands,
-.editing .course-content .section .activity .commands {
-    float: right;
-    padding: 0 4px 0 0;
-}
-
 .sitetopic .section .activity .commands img,
 .course-content .section .activity .commands img {
-  height: 24px;
-  padding: 4px;
   vertical-align: middle;
 }
 
@@ -225,12 +167,6 @@
 .editing .sitetopic .summary .no-overflow,
 .editing .course-content .summary .no-overflow {
     float: left;
-}
-
-.editing .sitetopic .summary > a,
-.editing .course-content .summary > a {
-    float: right;
-    padding-right: 7px; /* line it up with the commands */
 }
 
 .editing .sitetopic .summary:after,
@@ -246,9 +182,8 @@
 /* Resource Chooser */
 
 .path-course .section .section-modchooser {
-	margin-top: 1em;
 	padding: 10px 10px 5px 0px;
-	background: [[setting:bodybgcolor]];
+	background: transparent;
 	border-radius: 5px 5px 0 0;
 }
 
@@ -271,7 +206,7 @@
     padding: 6px;
     border: 1px solid [[setting:bordercolor]];
     text-align: center;
-    background: [[setting:colorscheme]];
+    background: [[setting:contentbgcolor]];
     position: absolute;
     z-index: 9999;
     border-radius: 0px 0px 5px 5px;
@@ -300,10 +235,6 @@
 /* 2 Column View */
 
 @media screen and (min-width:[[setting:twocolmin]]) {
-    .site-topic ul.section,
-    .course-content ul.section {
-        margin: 0 -20px;
-    }
     .path-course-view .completionprogress {
         margin: 4px 0 4px 20px;
     }
@@ -311,10 +242,6 @@
 
 /* 3 Column View */
 @media screen and (min-width:[[setting:threecolmin]]) {
-    .site-topic ul.section,
-    .course-content ul.section {
-        margin: 0;
-    }
     .path-course-view .completionprogress {
         margin: 4px 0 4px 40px;
     }
