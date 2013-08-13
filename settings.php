@@ -398,9 +398,9 @@ if ($ADMIN->fulltree) {
     $settings->add($setting);
     
     //Set custom JS for theme
-    $name = 'theme_zebra/customjs';
-    $title = get_string('customjs', 'theme_zebra');
-    $description = get_string('customjsdesc', 'theme_zebra');
+    $name = 'theme_blearning/customjs';
+    $title = get_string('customjs', 'theme_blearning');
+    $description = get_string('customjsdesc', 'theme_blearning');
     $setting = new admin_setting_configtextarea($name, $title, $description, null);
     $settings->add($setting);
 
@@ -413,9 +413,9 @@ if ($ADMIN->fulltree) {
     $settings->add($setting);
     
     //Beg for money
-    $name = 'theme_zebra/donate';
-    $heading = get_string('donate', 'theme_zebra');
-    $information = get_string('donatedesc', 'theme_zebra');
+    $name = 'theme_blearning/donate';
+    $heading = get_string('donate', 'theme_blearning');
+    $information = get_string('donatedesc', 'theme_blearning');
     $setting = new admin_setting_heading($name, $heading, $information);
     $settings->add($setting);
 }
