@@ -21,8 +21,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/* Questionnaire */
+/* Lesson */
 
-.path-mod-questionnaire .qn-type input[type="checkbox"] {
-    margin-right: 3px;
+.path-mod-lesson .edit_pages_box .addlinks {
+    margin: 2em 0 1em;
 }

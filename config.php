@@ -42,6 +42,7 @@ $THEME->sheets = array(
     'block_login',  //Overrides for login block
     'calendar',	    //Overrides for the calendar sheet from Base
     'course',	    //Overrides for the course sheet from Base
+    'gradebook',    //Overrides for the gradebook from YUI
     'custommenu',   //Applies style to the custommenu
     'dock',         //Derived from Rebase
     'grade',
@@ -49,6 +50,7 @@ $THEME->sheets = array(
     'mod_page',     //Overrides for page
     'mod_questionnaire',    //Overrides for questionnaire
     'mod_resource', //Overrides for resources
+    'mod_lesson',   //Overrides for Lesson
     'extra',        //Extra stuff that doesn't fit the above
     'ie'            //Special Internet Explorer rules
 );
@@ -116,17 +118,17 @@ $THEME->layouts = array(
     'popup' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true)
+        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true, 'nocourseheaderfooter'=>true)
     ),
     'frametop' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true)
+        'options' => array('nofooter'=>true, 'nocoursefooter'=>true)
     ),
     'maintenance' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true)
+        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true, 'nocourseheaderfooter'=>true)
     ),
     'embedded' => array(
         'file' => 'general.php',
@@ -136,24 +138,27 @@ $THEME->layouts = array(
     'print' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true)
+        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true, 'nocourseheaderfooter'=>true)
     ),
     'redirect' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true)
+        'options' => array('nofooter'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologininfo'=>true, 'nocourseheaderfooter'=>true)
     ),
     'report' => array(
-        'file' => 'report.php', //Enables overflow for reports
+        'file' => 'general.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array()
-    )
+    ),
+    'secure' => array(
+        'file' => 'general.php',
+        'regions' => array('side-pre', 'side-post'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologinlinks'=>true, 'nocourseheaderfooter'=>true),
+    ),
 );
 
 $THEME->enable_dock = true;
 
 $THEME->csspostprocess = 'zebra_tab_process_css'; //Process the settings page (colors, widths, etc.)
-
-$THEME->javascripts = array();
-$THEME->javascripts_footer = array();

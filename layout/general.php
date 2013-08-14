@@ -22,7 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-require_once('header.php'); ?>
+require_once(dirname(__FILE__).'/header.php'); ?>
 <body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join(' ', $bodyclasses)) ?>">
     <?php echo $OUTPUT->standard_top_of_body_html(); ?>
     <div id="page">
@@ -85,7 +85,12 @@ require_once('header.php'); ?>
                             <div id="region-main-wrap">
                                 <div id="region-main">
                                     <div class="region-content">
-                                        <?php echo method_exists($OUTPUT, "main_content") ? $OUTPUT->main_content() : core_renderer::MAIN_CONTENT_TOKEN ?>
+                                        <?php if (!empty($courseheader)) { 
+                                            echo '<div id="course-header">' . $courseheader . '</div>';
+                                        }
+                                        echo $coursecontentheader;
+                                        echo $maincontent;
+                                        echo $coursecontentfooter; ?>
                                     </div>
                                 </div>
                             </div>
@@ -107,4 +112,4 @@ require_once('header.php'); ?>
                     </div>
                 </div>
             </div>
-	    <?php require_once('footer.php');
+	    <?php require_once(dirname(__FILE__).'/footer.php');
