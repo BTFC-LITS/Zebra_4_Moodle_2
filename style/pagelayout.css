@@ -41,7 +41,9 @@ body.android, body.ios {
 
 hr {
     background-color: [[setting:bordercolor]];
-    border-width: 0;
+    border-width: 1px 0;
+    border-style: solid;
+    border-bottom-color: #FFF;
     color: [[setting:bordercolor]];
     line-height: 0;
     page-break-after: always;
