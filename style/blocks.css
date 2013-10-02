@@ -103,3 +103,8 @@
         left: 200px;
     }
 }
+
+.block_rss_client .list li {
+    border-color: [[setting:bordercolor]];
+    padding: 3px 0;
+}
